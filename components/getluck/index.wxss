@@ -1,0 +1,23 @@
+/* components/getluck/index.wxss */
+
+canvas{
+  position: absolute;
+  top: 0;
+  transform: translateY(-200%);
+}
+image{
+  border-radius: 50%;
+}
+
+.luck-rotate-box{
+  position: relative
+}
+.luck-point{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100rpx;
+  height: 100rpx;
+  background: url('https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=241167447,1767464462&fm=26&gp=0.jpg') no-repeat center center/cover;
+}

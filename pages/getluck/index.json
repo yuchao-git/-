@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "get-luck-component": "../../components/getluck/index"
+  }
+}
