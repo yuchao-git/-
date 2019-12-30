@@ -147,7 +147,6 @@ Component({
       this.setData({
         animation: animate.export()
       });
-
     },
     transitionend: function () {
       this.triggerEvent('getPrizeEnd',{prize:this.data.prizeObj});
