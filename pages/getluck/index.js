@@ -27,7 +27,7 @@ Page({
     colorList: ['#abc', '#ccc', '#afb', '#aec', '#cef','#dae'],
     prize: null
   },
-
+ 
   /**
    * 生命周期函数--监听页面加载
    */
