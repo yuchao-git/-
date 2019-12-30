@@ -154,5 +154,5 @@ Component({
     getPrize: function() {
       this.triggerEvent('getPrize');
     }
-  }
+  } 
 })
