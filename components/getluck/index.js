@@ -125,8 +125,8 @@ Component({
           y: 0,
           width: 2 * radius,
           height: 2 * radius,
-          destWidth: 2 * radius,
-          destHeight: 2 * radius,
+          destWidth: 2 * radius * 2,
+          destHeight: 2 * radius * 2,
           success: (res) => {
             let imgPath = res.tempFilePath;
             this.setData({

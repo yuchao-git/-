@@ -7,10 +7,14 @@ canvas{
 }
 image{
   border-radius: 50%;
+  width: 750rpx;
+  height: 750rpx;
+  margin: 0 auto;
 }
 
 .luck-rotate-box{
-  position: relative
+  position: relative;
+  text-align: center;
 }
 .luck-point{
   position: absolute;

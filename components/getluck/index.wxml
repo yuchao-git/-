@@ -1,7 +1,7 @@
 <!--components/getluck/index.wxml-->
 <view>
   <view class="luck-rotate-box">
-    <image style="width:{{2*raduis}}px;height:{{2*raduis}}px" src="{{luckRotate}}" animation="{{animation}}" bind:transitionend="transitionend"></image>
+    <image src="{{luckRotate}}" animation="{{animation}}" bind:transitionend="transitionend"></image>
     <view class="luck-point" bindtap="getPrize"></view>
   </view>
   <canvas style="width:{{2*raduis}}px;height:{{2*raduis}}px" canvas-id="getluck"></canvas>
