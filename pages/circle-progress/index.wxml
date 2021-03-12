@@ -1,0 +1,23 @@
+<!-- pages/circle-progress/index.wxml -->
+<view class="circle-progress">
+    <view class="item-box">
+        <view class="item huanxing {{type == 'huanxing'?'active':''}}" bind:tap="changeType" data-type="huanxing">环形</view>
+        <view class="item fenshu {{type == 'fenshu'?'active':''}}" bind:tap="changeType" data-type="fenshu">3/4进度</view>
+        <view class="item banyuan {{type == 'banyuan'?'active':''}}" bind:tap="changeType" data-type="banyuan">半圆</view>
+    </view>
+    <view class="a" wx:if="{{type=='huanxing'}}">
+        <rang-progress startDrow="{{true}}" percentage="{{currentConfig.percentage}}">
+            <view class="info">{{type}}</view>
+        </rang-progress>
+    </view>
+    <view class="a" wx:elif="{{type=='fenshu'}}">
+        <rang-progress startDrow="{{true}}" percentage="{{currentConfig.percentage}}" startAngle="{{currentConfig.startAngle}}" endAngle="{{currentConfig.endAngle}}">
+            <view class="info">{{type}}</view>
+        </rang-progress>
+    </view>
+    <view class="a" wx:else>
+        <rang-progress startDrow="{{true}}" percentage="{{currentConfig.percentage}}" startAngle="{{currentConfig.startAngle}}" endAngle="{{currentConfig.endAngle}}">
+            <view class="info">{{type}}</view>
+        </rang-progress>
+    </view>
+</view>

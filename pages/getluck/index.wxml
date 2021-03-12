@@ -1,4 +1,4 @@
-<!--pages/getluck/index.wxml-->
-<view class="page-getluck">
-   <get-luck-component prize="{{prize}}" list="{{prizeList}}" colorList="{{colorList}}" bind:getPrize="getPrize" bind:getPrizeEnd="getPrizeEnd"></get-luck-component>
+<view>
+  <get-luck-component prize="{{prize}}" list="{{prizeList}}" colorList="{{colorList}}" bind:getPrize="getPrize" bind:getPrizeEnd="getPrizeEnd"></get-luck-component>
+  <view class="a">{{a}}</view>
 </view>

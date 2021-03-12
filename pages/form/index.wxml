@@ -1,0 +1,3 @@
+<!--pages/form/index.wxml-->
+<view>输入框</view>
+<view><label>普通输入框</label><input /></view>

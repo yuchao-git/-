@@ -1,0 +1,31 @@
+.tree {
+    padding-left: 30rpx;
+
+    &.hide {
+        display: none;
+    }
+
+    .tree-item {
+        .show-title {
+            color: #666;
+            line-height: 60rpx;
+            position: relative;
+
+            .switch-item {
+                position: absolute;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                top: 50%;
+                left: -15rpx;
+                transform: translateY(-50%);
+                border: 10rpx solid;
+                border-color: transparent transparent transparent #333;
+
+                &.open {
+                    border-color: #333 transparent transparent transparent;
+                }
+            }
+        }
+    }
+}

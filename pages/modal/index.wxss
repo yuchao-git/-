@@ -1,4 +1,6 @@
-.c-item{
+/* pages/modal/index.wxss */
+
+.position{
   width: 690rpx;
   display: flex;
   height: 80rpx;
@@ -6,6 +8,9 @@
   align-items: center;
   color: white;
   background-color: #3c90ff;
-  margin-top: 20rpx;
   border-radius: 8rpx;
+  margin: 20rpx auto 0;
+}
+.position.active{
+    background-color: #00D0E8;
 }

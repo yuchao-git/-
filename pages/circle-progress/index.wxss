@@ -1,0 +1,31 @@
+/* pages/circle-progress/index.wxss */
+.a{
+    width: 400rpx;
+    height: 400rpx;
+    margin: 100rpx auto;
+}
+
+.info{
+    text-align: center;
+    line-height: 400rpx;
+}
+
+.item-box{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.item-box .item{
+    background-color: #3c90ff;
+    width: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rpx;
+    height: 60rpx;
+}
+
+.item-box .item.active{
+    background-color: #00D0E8;
+}

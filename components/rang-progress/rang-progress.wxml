@@ -1,0 +1,4 @@
+<!--component/rang/rang.wxml-->
+<canvas canvas-id="rang" id="rang">
+  <slot></slot>
+</canvas>

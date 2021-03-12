@@ -1,0 +1,23 @@
+<view bind:tap="cancleFn" data-dom="mask" class="modal-component-mask {{show?'':'hide'}}">
+    <view class="content {{position}}" catch:tap="bubbleFn">
+        <view wx:if="{{showClose}}" class="colse" bind:tap="cancleFn"></view>
+        <block wx:if="{{customTitle}}">
+            <slot name="title"></slot>
+        </block>
+        <block wx:else>
+            <view class="title">{{titleText}}</view>
+        </block>
+        <view class="content-body">
+            <slot name="body"></slot>
+        </view>
+        <block wx:if="{{customFooter}}">
+            <slot name="footer"></slot>
+        </block>
+        <block wx:else>
+            <view class="footer">
+                <view mut-bind:tap="cancleFn" class="footer-active cancle">{{cancleText}}</view>
+                <view bindtap="okFn" class="footer-active ok" style="{{okStyle}}">{{okText}}</view>
+            </view>
+        </block>
+    </view>
+</view>

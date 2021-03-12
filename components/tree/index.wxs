@@ -1,0 +1,7 @@
+var isObject = function (value) {
+    return typeof value == 'object'
+}
+
+module.exports = {
+    isObject: isObject
+}

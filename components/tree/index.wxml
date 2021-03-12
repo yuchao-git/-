@@ -1,0 +1,14 @@
+<wxs src="./index.wxs" module="Tools"></wxs>
+<view class="tree {{open?'':'hide'}}">
+    <view class="tree-item" wx:for="{{treeData}}" wx:if="{{index !== 'treeOpen'}}">
+        <view class="show-title">
+            <block wx:if="{{Tools.isObject(item)}}">
+                <text class="switch-item {{item.treeOpen?'open':''}}" bind:tap="switchTree" data-key="{{index}}"></text>
+            </block>
+            {{index}}:{{Tools.isObject(item) ?item.treeOpen?'':'{...}':item}}
+        </view>
+        <block wx:if="{{Tools.isObject(item)}}">
+            <tree treeData="{{item}}" open="{{item.treeOpen}}"></tree>
+        </block>
+    </view>
+</view>

@@ -2,13 +2,20 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/getluck/index"
+    "pages/form/index",
+    "pages/getLuck/index",
+    "pages/circle-progress/index",
+    "pages/modal/index",
+    "pages/stateHelp/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "modal": "/components/modal/modal"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

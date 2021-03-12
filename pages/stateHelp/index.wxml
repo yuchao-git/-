@@ -1,0 +1,27 @@
+<view class="state-show">
+    <view class="tab-box">
+        <view class="tab-item {{tab=='state'?'active':''}}" data-item="state" bind:tap="changeTab">state</view>
+        <view class="tab-item {{tab=='map'?'active':''}}" data-item="map" bind:tap="changeTab">map</view>
+        <view class="tab-item {{tab=='active'?'active':''}}" data-item="active" bind:tap="changeTab">active</view>
+    </view>
+    <view class="content">
+        <block wx:if="{{tab=='state'}}">
+            <view class="state-item">
+                <tree treeData="{{data}}"></tree>
+            </view>
+        </block>
+        <block wx:elif="{{tab=='map'}}">
+            <view wx:for="{{subEventMap}}" class="map-item">
+                {{index}}: 
+                <view class="route-item" wx:for="{{item}}">
+                    {{item}}
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="active-item" wx:for="{{active}}">
+                {{item.key}}: {{item.route}} -------- {{item.from}}->{{item.to}}
+            </view>
+        </block>
+    </view>
+</view>

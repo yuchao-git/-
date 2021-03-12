@@ -1,0 +1,13 @@
+<view class="modal">
+    <view class="p-box">
+        <view class="position {{position=='top'?'active':''}}" data-position="top" bind:tap="changePosition">上</view>
+        <view class="position {{position=='left'?'active':''}}" data-position="left" bind:tap="changePosition">左</view>
+        <view class="position {{position=='center'?'active':''}}" data-position="center" bind:tap="changePosition">中</view>
+        <view class="position {{position=='right'?'active':''}}" data-position="right" bind:tap="changePosition">右</view>
+        <view class="position {{position=='bottom'?'active':''}}" data-position="bottom" bind:tap="changePosition">下</view>
+    </view>
+    <modal show="{{showModal}}" title="测试" customTitle="{{true}}" position="{{position}}" bind:cancleFn="cancleModal" bind:okFn="successModal">
+        <view style="color:red" slot="title">这是自定义头部</view>
+        <view slot="body">这是内容</view>
+    </modal>
+</view>
