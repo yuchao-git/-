@@ -1,0 +1,4 @@
+<!--component/custom-bottom/index.wxml-->
+<view class="custom-footer">
+    <slot></slot>
+</view>

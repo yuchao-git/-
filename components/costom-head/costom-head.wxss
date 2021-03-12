@@ -1,0 +1,10 @@
+.costom-head-box {
+  width: 100%;
+  position: relative;
+}
+.costom-head-box .costom-head {
+  position: absolute;
+  width: 100%;
+  bottom: 4rpx;
+  left: 0;
+}

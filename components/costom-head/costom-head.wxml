@@ -1,0 +1,6 @@
+<!--component/costom-head/costom-head.wxml-->
+<view class="costom-head-box" style="height:{{navHeight}}px">
+    <view class="costom-head" style="height:{{titleBarHeight}}px">
+        <slot/>
+    </view>
+</view>
