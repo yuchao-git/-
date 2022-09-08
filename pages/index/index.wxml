@@ -1,6 +1,6 @@
 <!-- index.wxml -->
 <view class="container">
-    <navigator class="c-item" url="/pages/getLuck/index" hover-class="navigator-hover">圆盘抽奖</navigator>
+    <navigator class="c-item" url="/pages/getluck/index" hover-class="navigator-hover">圆盘抽奖</navigator>
     <navigator class="c-item" url="/pages/circle-progress/index" hover-class="navigator-hover">环形进度</navigator>
     <navigator class="c-item" url="/pages/modal/index" hover-class="navigator-hover">弹框</navigator>
     <navigator class="c-item" url="/pages/stateHelp/index" hover-class="navigator-hover">storeHelp{{a}}</navigator>

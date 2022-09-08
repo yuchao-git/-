@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/form/index",
-    "pages/getLuck/index",
+    "pages/getluck/index",
     "pages/circle-progress/index",
     "pages/modal/index",
     "pages/stateHelp/index"
